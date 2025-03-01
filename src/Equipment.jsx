@@ -7,18 +7,21 @@ export default function Equipment ({ equipment }) {
 
             <div>
                 <h2>Equipment List</h2>
-                {/* Check if monsters data is available */}
-                {equipment.length === 0 ? (
-                    <p>Loading equipment...</p>  // Display this if no data is available yet
-                ) : (
-                    <ul className="equipment-list">
-                    {equipment.map(equipment => (
-                        <li key={equipment.id}>{equipment.name}
-                        <img src={equipment.image} alt={equipment.name}/>
-                        </li> // Assuming the monster has an `id` and `name`
-                    ))}
-                    </ul>
-                )}
+                    <div className="equipment-list">
+                        {/* Check if monsters data is available */}
+                        {equipment.length === 0 ? (
+                            <p>Loading equipment...</p>  // Display this if no data is available yet
+                        ) : (
+                            <ul className="equipment-list">
+                            {equipment.map(equipment => (
+                                <li key={equipment.id} className="equipment-item">
+                                    <img src={equipment.image} alt={equipment.name} className="equipment-image" />
+                                    <p className="equipment-name">{equipment.name}</p>
+                                </li>
+                            ))}
+                            </ul>
+                        )}
+                </div>
             </div>
 
         </>

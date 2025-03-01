@@ -50,7 +50,199 @@ h1 {
   font-family: "Hylia Serif"
 }
 
+h2 {
+  font-family: "Hylia Serif"
+}
+
 li {
+  font-family: "Hylia Serif";
   list-style: none;
   list-style-type: none;
+}
+
+.equipment-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.equipment-list img {
+  width: 100%; /* Adjust the width to fit more images on the screen */
+  height: auto;
+  object-fit: cover;
+}
+
+.equipment-item {
+  display: flex;
+  flex-direction: column; /* Stack the image and name vertically */
+  align-items: center; /* Center the image and name */
+  text-align: center; /* Ensure name is centered under the image */
+  background-color: #f4f4f4; /* Light background for each item */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
+  width: 200px; /* Set width for each item */
+}
+
+.equipment-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+.equipment-name {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #333;
+}
+
+.monster-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.monster-list img {
+  width: 100%; /* Adjust the width to fit more images on the screen */
+  height: auto;
+  object-fit: cover;
+}
+
+.monster-item {
+  display: flex;
+  flex-direction: column; /* Stack the image and name vertically */
+  align-items: center; /* Center the image and name */
+  text-align: center; /* Ensure name is centered under the image */
+  background-color: #f4f4f4; /* Light background for each item */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
+  width: 200px; /* Set width for each item */
+}
+
+.monster-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+.monster-name {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #333;
+}
+
+
+.creature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.creature-list img {
+  width: 100%; /* Adjust the width to fit more images on the screen */
+  height: auto;
+  object-fit: cover;
+}
+
+.creature-item {
+  display: flex;
+  flex-direction: column; /* Stack the image and name vertically */
+  align-items: center; /* Center the image and name */
+  text-align: center; /* Ensure name is centered under the image */
+  background-color: #f4f4f4; /* Light background for each item */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
+  width: 200px; /* Set width for each item */
+}
+
+.creature-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+.creature-name {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #333;
+}
+
+.material-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.material-list img {
+  width: 100%; /* Adjust the width to fit more images on the screen */
+  height: auto;
+  object-fit: cover;
+}
+
+.material-item {
+  display: flex;
+  flex-direction: column; /* Stack the image and name vertically */
+  align-items: center; /* Center the image and name */
+  text-align: center; /* Ensure name is centered under the image */
+  background-color: #f4f4f4; /* Light background for each item */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
+  width: 200px; /* Set width for each item */
+}
+
+.material-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+.material-name {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #333;
+}
+
+
+.treasure-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.treasure-list img {
+  width: 100%; /* Adjust the width to fit more images on the screen */
+  height: auto;
+  object-fit: cover;
+}
+
+.treasure-item {
+  display: flex;
+  flex-direction: column; /* Stack the image and name vertically */
+  align-items: center; /* Center the image and name */
+  text-align: center; /* Ensure name is centered under the image */
+  background-color: #f4f4f4; /* Light background for each item */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
+  width: 200px; /* Set width for each item */
+}
+
+.treasure-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+.treasure-name {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #333;
 }
