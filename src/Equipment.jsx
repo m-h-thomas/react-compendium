@@ -15,7 +15,7 @@ export default function Equipment ({ equipment }) {
                             <ul className="equipment-list">
                             {equipment.map(equipment => (
                                 <li key={equipment.id} className="equipment-item">
-                                    <img src={equipment.image} alt={equipment.name} className="equipment-image" />
+                                    <img src={equipment.image} alt={equipment.name} className="equipment-image list-card" />
                                     <p className="equipment-name">{equipment.name}</p>
                                 </li>
                             ))}

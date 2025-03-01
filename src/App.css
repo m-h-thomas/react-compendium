@@ -47,11 +47,15 @@
 }
 
 h1 {
-  font-family: "Hylia Serif"
+  font-family: "Hylia Serif";
+  color: gold;
+  text-shadow: 2px 2px 5px black; /* Increased the offset and blur radius */;
 }
 
 h2 {
-  font-family: "Hylia Serif"
+  font-family: "Hylia Serif";
+  color: gold;
+  text-shadow: 2px 2px 5px black; /* Increased the offset and blur radius */
 }
 
 li {
@@ -78,6 +82,7 @@ li {
   align-items: center; /* Center the image and name */
   text-align: center; /* Ensure name is centered under the image */
   background-color: #f4f4f4; /* Light background for each item */
+  background-image: url('./images/texture.jpeg');
   border-radius: 8px; /* Rounded corners */
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
@@ -94,7 +99,7 @@ li {
   font-size: 16px;
   font-weight: bold;
   padding-top: 10px;
-  color: #333;
+  color: gold;
 }
 
 .monster-list {
@@ -115,6 +120,7 @@ li {
   align-items: center; /* Center the image and name */
   text-align: center; /* Ensure name is centered under the image */
   background-color: #f4f4f4; /* Light background for each item */
+  background-image: url('./images/texture.jpeg');
   border-radius: 8px; /* Rounded corners */
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
@@ -131,7 +137,7 @@ li {
   font-size: 16px;
   font-weight: bold;
   padding-top: 10px;
-  color: #333;
+  color: gold;
 }
 
 
@@ -153,6 +159,7 @@ li {
   align-items: center; /* Center the image and name */
   text-align: center; /* Ensure name is centered under the image */
   background-color: #f4f4f4; /* Light background for each item */
+  background-image: url('./images/texture.jpeg');
   border-radius: 8px; /* Rounded corners */
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
@@ -169,7 +176,7 @@ li {
   font-size: 16px;
   font-weight: bold;
   padding-top: 10px;
-  color: #333;
+  color: gold;
 }
 
 .material-list {
@@ -190,6 +197,7 @@ li {
   align-items: center; /* Center the image and name */
   text-align: center; /* Ensure name is centered under the image */
   background-color: #f4f4f4; /* Light background for each item */
+  background-image: url('./images/texture.jpeg');
   border-radius: 8px; /* Rounded corners */
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
@@ -206,7 +214,7 @@ li {
   font-size: 16px;
   font-weight: bold;
   padding-top: 10px;
-  color: #333;
+  color: gold;
 }
 
 
@@ -227,6 +235,7 @@ li {
   flex-direction: column; /* Stack the image and name vertically */
   align-items: center; /* Center the image and name */
   text-align: center; /* Ensure name is centered under the image */
+  background-image: url('./images/texture.jpeg');
   background-color: #f4f4f4; /* Light background for each item */
   border-radius: 8px; /* Rounded corners */
   padding: 10px;
@@ -244,5 +253,11 @@ li {
   font-size: 16px;
   font-weight: bold;
   padding-top: 10px;
-  color: #333;
+  color: gold;
+}
+
+.navButton {
+  font-family: "Hylia Serif";
+  margin: 10px;
+  background-image: url('./images/texture.jpeg');
 }

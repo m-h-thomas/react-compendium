@@ -71,22 +71,22 @@ function App() {
 
       <div className="home-header">
           <Link to="/">
-            <Button variant="outlined">HOME PAGE</Button>
+            <button className="navButton">HOME PAGE</button>
           </Link>
           <Link to="/monsters">
-            <Button variant="outlined">Monsters</Button>
+            <button className="navButton">MONSTER</button>
           </Link>
           <Link to="/creatures">
-            <Button variant="outlined">Creatures</Button>
+            <button className="navButton">CREATURES</button>
           </Link>
           <Link to="/materials">
-            <Button variant="outlined">Materials</Button>
+            <button className="navButton">MATERIALS</button>
           </Link>
           <Link to="/equipment">
-            <Button variant="outlined">Equipment</Button>
+            <button className="navButton">EQUIPMENT</button>
           </Link>
           <Link to="/treasure">
-            <Button variant="outlined">Treasure</Button>
+            <button className="navButton">TREASURE</button>
           </Link>
       </div>
 

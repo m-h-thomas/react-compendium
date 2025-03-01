@@ -6,6 +6,11 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  background-image: url('./images/HyruleBackground.jpg');
+  background-repeat: no-repeat;
+  background-position: center; /* Centers the background image */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -65,9 +70,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.monster-list {
-  list-style: none;
-  list-style-type: none;
 }
