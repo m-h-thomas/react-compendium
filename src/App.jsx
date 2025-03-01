@@ -5,6 +5,8 @@ import './App.css'
 import Monsters from './Monsters.jsx'
 import Creatures from './Creatures.jsx'
 import Materials from './Materials.jsx'
+import Equipment from './Equipment.jsx'
+import Treasure from './Treasure.jsx'
 
 function App() {
 
@@ -14,8 +16,17 @@ function App() {
   const [equipment, setEquipment] = useState([])
   const [treasure, setTreasure] = useState([])
 
+
+  //API Endpoints
+  
+  let monsterFetch = 'https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters'
+  let creatureFetch = 'https://botw-compendium.herokuapp.com/api/v3/compendium/category/creatures'
+  let materialFetch = 'https://botw-compendium.herokuapp.com/api/v3/compendium/category/materials'
+  let equipmentFetch = 'https://botw-compendium.herokuapp.com/api/v3/compendium/category/equipment'
+  let treasureFetch = 'https://botw-compendium.herokuapp.com/api/v3/compendium/category/treasure'
+
   useEffect(() => {
-      fetch('https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters')
+      fetch(monsterFetch)
         .then(res => res.json())
         .then(data => {
           setMonster(data.data)
@@ -23,7 +34,7 @@ function App() {
     }, [])
 
   useEffect(() => {
-      fetch('https://botw-compendium.herokuapp.com/api/v3/compendium/category/creatures')
+      fetch(creatureFetch)
         .then(res => res.json())
         .then(data => {
           setCreature(data.data)
@@ -31,12 +42,28 @@ function App() {
     }, [])  
 
   useEffect(() => {
-      fetch('https://botw-compendium.herokuapp.com/api/v3/compendium/category/materials')
+      fetch(materialFetch)
         .then(res => res.json())
         .then(data => {
           setMaterial(data.data)
         })
-    }, [])  
+    }, [])
+    
+  useEffect(() => {
+      fetch(equipmentFetch)
+        .then(res => res.json())
+        .then(data => {
+          setEquipment(data.data)
+        })
+    }, [])
+
+  useEffect(() => {
+      fetch(treasureFetch)
+        .then(res => res.json())
+        .then(data => {
+          setTreasure(data.data)
+        })
+    }, [])
 
 
   return (
@@ -55,6 +82,12 @@ function App() {
           <Link to="/materials">
             <Button variant="outlined">Materials</Button>
           </Link>
+          <Link to="/equipment">
+            <Button variant="outlined">Equipment</Button>
+          </Link>
+          <Link to="/treasure">
+            <Button variant="outlined">Treasure</Button>
+          </Link>
       </div>
 
       <Routes>
@@ -69,6 +102,8 @@ function App() {
         <Route path='/monsters' element={<Monsters monster={monster} />} />
         <Route path='/creatures' element={<Creatures creature={creature} />} />
         <Route path='/materials' element={<Materials material={material} />} />
+        <Route path='/equipment' element={<Equipment equipment={equipment} />} />
+        <Route path='/treasure' element={<Treasure treasure={treasure} />} />
       </Routes>
 
     </>
