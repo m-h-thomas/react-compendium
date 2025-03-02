@@ -17,10 +17,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em gold);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em gold);
 }
 
 @keyframes logo-spin {
@@ -260,4 +260,29 @@ li {
   font-family: "Hylia Serif";
   margin: 10px;
   background-image: url('./images/texture.jpeg');
+}
+
+#homeButton {
+  color: gold;
+}
+
+.navButton {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center; /* Centers the remaining buttons */
+  width: 100%;
+}
+
+.navButton:hover {
+  background-color: #0056b3; /* Darker shade on hover */
 }

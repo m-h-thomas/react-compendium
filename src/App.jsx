@@ -71,23 +71,25 @@ function App() {
 
       <div className="home-header">
           <Link to="/">
-            <button className="navButton">HOME PAGE</button>
+            <button className="navButton" id="homeButton">HOME</button>
           </Link>
-          <Link to="/monsters">
-            <button className="navButton">MONSTER</button>
-          </Link>
-          <Link to="/creatures">
-            <button className="navButton">CREATURES</button>
-          </Link>
-          <Link to="/materials">
-            <button className="navButton">MATERIALS</button>
-          </Link>
-          <Link to="/equipment">
-            <button className="navButton">EQUIPMENT</button>
-          </Link>
-          <Link to="/treasure">
-            <button className="navButton">TREASURE</button>
-          </Link>
+            <div className="nav-buttons">
+              <Link to="/monsters">
+                <button className="navButton">MONSTERS</button>
+              </Link>
+              <Link to="/creatures">
+                <button className="navButton">CREATURES</button>
+              </Link>
+              <Link to="/materials">
+                <button className="navButton">MATERIALS</button>
+              </Link>
+              <Link to="/equipment">
+                <button className="navButton">EQUIPMENT</button>
+              </Link>
+              <Link to="/treasure">
+                <button className="navButton">TREASURE</button>
+              </Link>
+            </div>
       </div>
 
       <Routes>
